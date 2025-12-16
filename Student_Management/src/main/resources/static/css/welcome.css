@@ -1,0 +1,73 @@
+@charset "UTF-8";@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form Card */
+form {
+    background: #ffffff;
+    padding: 40px 50px;
+    border-radius: 18px;
+    width: 420px;
+    text-align: center;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.7s ease;
+}
+
+/* Headings */
+h1 {
+    color: #4b0082;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+h2 {
+    color: #555;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+/* Animation */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
